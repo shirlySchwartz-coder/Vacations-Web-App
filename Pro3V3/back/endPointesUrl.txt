@@ -1,0 +1,31 @@
+vacationsRouter:
+/api/v1/vacations
+    get- '/api/v1/vacations/all' 
+    get - "/vacation/:id"
+    post - "/follow/vacation/:id"
+    delete - "/unfollow/vacation/:id"
+    get -  "/favorites/:id"
+    
+
+loginRouter:
+/api/v1/login 
+    post - '/loginUser'
+    post - '/registerUser'
+    get - '/forgotPassword/:userName'
+    delete - '/delete/:id'
+    post - '/getJWT'
+    get - '/checkJWT/:token'
+
+
+adminRouter:
+/api/v1/dashboard
+    get -  '/all'
+    get - '/edit/:id'
+    post - '/addVacation'
+    post -  '/uploadPicture/:id'
+    put -  '/updateVacation/:id'
+    delete - '/deleteVacation/:id'
+    get - '/reports'
+
+
+/api/v1/dashBoard/uploadPicture
